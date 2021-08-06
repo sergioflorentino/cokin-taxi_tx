@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+        <fragment
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="135dp"
+    class="com.google.android.gms.maps.MapFragment" />
+        
+        <ImageView
+        android:id="@+id/logo_cokin"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="145dp"
+        android:layout_marginRight="55dp"        
+        android:src="@drawable/cokin_taxi"/>
+
+    <RelativeLayout
+        android:id="@+id/panel_motorista"
+        android:layout_width="fill_parent"
+        android:layout_height="140dip"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2dp"
+        android:background="@drawable/spinner_press"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:visibility="gone">
+
+       <include layout="@layout/exibe_motorista"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/panel_chamar"
+        android:layout_width="fill_parent"
+        android:layout_height="130dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2dp"
+        android:background="@drawable/spinner_press"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        
+       <include layout="@layout/chamar_taxi"/>
+    </RelativeLayout>
+            
+</RelativeLayout>

@@ -1,0 +1,19 @@
+criacao de conta
+no login pergunta se e usuario ou taxista
+   se for usuario
+   cadastro de usuario
+
+   se for taxista
+   cadastro de taxista
+
+login
+login usuario ou taxista
+ login usuario
+   mainactivity
+
+   login taxista
+  taxistaactivity
+
+
+
+

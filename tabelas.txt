@@ -1,0 +1,71 @@
+tx_motorista
+------------
+mo_email
+mo_nome
+mo_sobrenome
+mo_celular
+mo_senha
+mo_foto
+mo_placa
+mo_cpf
+mo_endereco
+mo_lat
+mo_lng
+mo_ocorrencia
+mo_aval_carro
+mo_aval_mot
+mo_status  0-ativo 1-bloqueado 2-desativado
+mo_statuscokin  0-disponivel 1-corrida 2-desligado
+mo_qtd_aval_carro
+mo_qtd_aval_mot
+
+tx_usuario
+----------
+us_email
+us_nome
+us_sobrenome
+us_celular
+us_senha
+us_foto
+us_endereco
+us_lat
+us_lng
+us_status  0-ativo 1-bloqueado 2-desativado
+us_statuscokin  0-disponivel 1-corrida 2-desligado
+
+tx_ocorrencia
+oc_id
+oc_mo_email
+oc_us_email
+oc_data
+oc_hora
+oc_latini
+oc_latfim
+oc_lngini
+oc_lngfim
+oc_status
+oc_distancia
+
+islene- 81 9655.3476
+
+http://cdn.c.photoshelter.com/img-get/I0000cxhcYb51IhY/s/1000/667/times-square-traffic-at-night-times-square-new-york-h210234950.jpg
+
+
+
+ 5 5 5 5 5 1
+ 
+media
+5
+quantidade
+5
+
+5x5+1/6 = 4,33
+
+ 1 1 1 1 1 5
+1
+5
+1x5+5/6
+2 opções para escolha do taxista
+pela distancia da rota ou pela distancia entre pontos(linha reta)
+http://maps.googleapis.com/maps/api/distancematrix/json?origins=-8.085302759223223,-34.9085448117849&destinations=-8.079886,-34.915028&mode=driving&language=pt0BR&sensor=true&units=metric
+

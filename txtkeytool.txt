@@ -1,0 +1,5 @@
+C:\Arquivos de Programas\java\jdk1.7.0\bin>keytool -list -alias androiddebugkey
+-keystore "C:\Users\SergioRafael\.android\debug.keystore" -storepass android -ke
+ypass android
+androiddebugkey, 28/11/2012, PrivateKeyEntry,
+Fingerprint (MD5) do certificado: 07:5E:96:ED:DB:66:43:F4:FD:9D:EC:CB:7B:94:37:19:44:73:89:9D

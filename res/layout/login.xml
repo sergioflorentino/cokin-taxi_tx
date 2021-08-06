@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#D8E6E5">
+  <RelativeLayout
+        android:id="@+id/back_theme"
+        android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:background="@drawable/theme_cokintx">
+      		
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/header"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip"
+  				android:orientation="vertical">
+  				<!-- Logo Start-->
+
+  				<ImageView
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="100dp"
+  				    android:src="@drawable/cokin_taxi" />
+  				<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="cokin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#372c24"
+        android:textSize="35dp" />
+
+  				<!-- Logo Ends -->
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+  		<!-- Footer Start -->
+  		<LinearLayout android:id="@+id/footer"
+  				android:layout_width="fill_parent"
+  				android:layout_height="90dip"
+  				android:layout_alignParentBottom="true">
+  		</LinearLayout>
+  		<!-- Footer Ends -->
+  		 		
+  		<!-- Login Form -->
+		<LinearLayout
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:layout_below="@id/header">
+		  <!--  Email Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#372c24"
+		  		android:text="Login"/>
+		  <EditText android:id="@+id/cokin_login" 
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  <!--  Password Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#372c24"
+		  		android:text="Password"/>
+		  <EditText android:id="@+id/cokin_password" 
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:singleLine="true"
+		  		android:password="true"/>
+		  <!-- Login button -->	
+		  <Button android:id="@+id/btnLogin" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="10dip"
+		  		android:text="Login"/>
+		  <!-- Link to Registration Screen -->		
+
+		  <TextView
+		      android:id="@+id/link_to_register"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="40dip"
+		      android:layout_marginTop="40dip"
+		      android:gravity="center"
+		      android:text="Cadastre-se no Cokin +Táxi"
+		      android:textColor="#0b84aa"
+		      android:textSize="20dip" />
+		    
+		</LinearLayout>
+  		<!-- Login Form Ends --> 		
+  		
+  </RelativeLayout>
+</ScrollView>

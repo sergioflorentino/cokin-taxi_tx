@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/spinner_press">
+
+    <ImageView
+        android:id="@+id/foto_motorista"
+        android:layout_width="110dip"
+        android:layout_height="110dip"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="10dip"
+        android:src="@drawable/ic_contact_picture"/>
+    
+        <TextView
+            android:id="@+id/nome_motorista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foto_motorista"
+            android:text="Nome do Motorista"
+            android:textColor="#000000"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        
+        <TextView
+            android:id="@+id/placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/foto_motorista"
+            android:text="Placa"
+            android:textColor="#7A7A7A"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/foto_motorista"
+            android:text="Modelo"
+            android:textColor="#7A7A7A"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        
+        <TextView
+            android:id="@+id/aval_motorista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modelo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/foto_motorista"
+            android:text="Aval.Motorista"
+            android:textColor="#7A7A7A"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        
+        <TextView
+            android:id="@+id/aval_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aval_motorista"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/foto_motorista"
+            android:text="Aval.Veículo"
+            android:textColor="#7A7A7A"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        
+        <TextView
+            android:id="@+id/placa_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/placa"
+            android:gravity="right"
+            android:text="AAB1233"
+            android:textColor="#000000"
+            android:textSize="16dip"
+            android:typeface="sans" />
+
+        <TextView
+        android:id="@+id/modelo_veiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/placa_veiculo"
+        android:gravity="right"
+        android:text=" Meriva"
+        android:textColor="#000000"
+        android:textSize="16dip"
+        android:typeface="sans" />
+        
+    <RatingBar
+        android:id="@+id/r_aval_motorista"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/modelo_veiculo"
+        android:gravity="right"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="2.0" />
+    <RatingBar
+        android:id="@+id/r_aval_carro"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/r_aval_motorista"
+        android:gravity="right"        
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="2.0" />
+    
+        <ImageView
+        android:id="@+id/linha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/nome_motorista"
+        android:src="@drawable/divider_horizontal_holo_dark"/>
+        
+        <TextView
+            android:id="@+id/tit_distancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="35dp"
+            android:gravity="right"
+            android:text="Distância"
+            android:textColor="#7A7A7A"
+            android:textSize="22dip"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txt_distancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tit_distancia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_normal"
+            android:gravity="right"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:text="1 Km"
+            android:textColor="#000000"
+            android:textSize="30dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tit_distancia"
+            android:layout_toLeftOf="@+id/txt_distancia"            
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_km_cinza_bg"/>
+        
+        <TextView
+            android:id="@+id/tit_tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_distancia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:text="Tempo Estimado"
+            android:textColor="#7A7A7A"
+            android:textSize="22dip"
+            android:typeface="sans" />
+        
+        <TextView
+            android:id="@+id/txt_tempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tit_tempo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_normal"
+            android:gravity="right"
+            android:paddingLeft="50dip"
+            android:paddingRight="50dip"
+            android:text="3 min"
+            android:textColor="#000000"
+            android:textSize="30dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+        
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tit_tempo"
+            android:layout_toLeftOf="@+id/txt_tempo"     
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/time"/>
+                
+        <Button
+            android:id="@+id/btn_confirmar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            style="@style/btnStyleShakespeare"
+            android:text="Confirmar"
+            android:textColor="#FFFFFF"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+        
+    
+</RelativeLayout> 

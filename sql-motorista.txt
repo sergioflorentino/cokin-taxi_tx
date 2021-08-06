@@ -1,0 +1,14 @@
+voce é o taxista mais próximo de alguma ocorrencia? (em linha reta)
+
+    parametro é a posicão inicial da ocorrencia.
+
+    $result = mysql_query("Select mo_email,mo_nome,mo_celular,mo_foto,mo_placa,mo_modelo,mo_lat,mo_lng,mo_aval_carro,mo_aval_mot,mo_status,mo_statuscokin, acos(sin($lat)*sin(radians(mo_lat)) + cos($lat)*cos(radians(mo_lat))*cos(radians(mo_lng)-$lng))*$R As distancia
+    From tx_motorista
+    Where mo_lat>$minLat And mo_lat<$maxLat
+    And mo_lng>$minLon And mo_lng<$maxLon and mo_status = 0 and mo_statuscokin = 0
+
+    Order by distancia LIMIT 10");
+
+
+
+
